@@ -64,6 +64,7 @@ h1:focus,h2:focus,h3:focus{outline:none}
 .btn.primary{background:var(--wine);color:#fff;box-shadow:0 4px 0 var(--wine-deep)}
 .btn.primary:hover{background:var(--rose)}
 .btn:active{transform:translateY(2px)}
+a.btn{display:inline-flex;align-items:center;text-decoration:none}
 .btn.nudge{animation:nudge 2.4s ease-in-out .6s infinite}
 @keyframes nudge{0%,72%,100%{transform:none}80%{transform:scale(1.08)}88%{transform:scale(.97)}}
 .actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
@@ -386,8 +387,11 @@ h1:focus,h2:focus,h3:focus{outline:none}
       <p class="arabic" lang="ar" dir="rtl">كل عام وأنتِ بخير يا نور</p>
       <p class="promise">Next year, inshallah, I'll be there to light the candle with you.</p>
       <div class="actions">
+        <a class="btn primary" href="https://face-invaders.me/play/s/defeat-clown-202" target="_blank" rel="noopener">Bonus round: play your game</a>
+      </div>
+      <div class="actions">
         <button class="btn" id="btn-reread" type="button">Read the letter again</button>
-        <button class="btn primary" id="btn-flowers-again" type="button">Back to your flowers</button>
+        <button class="btn" id="btn-flowers-again" type="button">Back to your flowers</button>
       </div>
     </div>
     <div class="sp" aria-hidden="true"></div>
