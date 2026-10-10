@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="only light">
 <title>Flowers for Noor</title>
 </head>
 <body>
@@ -33,8 +34,10 @@
   --f-script:"Great Vibes", "Segoe Script", "Lucida Handwriting", cursive;
   --f-body:"Quicksand", "Nunito", "Segoe UI", system-ui, sans-serif;
   --f-arabic:"Aref Ruqaa", "Amiri", "Traditional Arabic", "Times New Roman", serif;
-  color-scheme: light;
+  color-scheme: only light;
 }
+/* the page is a light paper letter on purpose: tell browsers with an automatic "dark mode for websites" to leave it alone */
+@media (prefers-color-scheme: dark){:root{color-scheme:only light}}
 html{height:100%;box-sizing:border-box}
 body{height:100%;margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-weight:500;overflow:hidden;-webkit-tap-highlight-color:transparent}
 [hidden]{display:none!important}
